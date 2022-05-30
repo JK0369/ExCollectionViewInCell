@@ -39,9 +39,9 @@ final class MyTableViewCellTwo: UITableViewCell {
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
-  
+
   private var items = [CollectionViewItem]()
-  
+
   @available(*, unavailable)
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
@@ -71,11 +71,10 @@ final class MyTableViewCellTwo: UITableViewCell {
     super.prepareForReuse()
     self.prepare(name: nil, items: [])
   }
-  
+
   func prepare(name: String?, items: [CollectionViewItem]) {
     self.label.text = name
     self.items = items
-    self.collectionView.dataSource = self
   }
 }
 

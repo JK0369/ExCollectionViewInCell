@@ -35,7 +35,6 @@ class ViewController: UIViewController {
       .color(randomColor),
       .color(randomColor),
       .color(randomColor),
-      
     ]),
     .thumbnail(UIImage(named: "flower"), "iOS capture"),
     .thumbnail(UIImage(named: "flower"), "iOS development"),
